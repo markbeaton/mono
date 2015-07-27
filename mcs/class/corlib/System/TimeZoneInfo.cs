@@ -86,7 +86,7 @@ namespace System
 
 		/*
 			TimeZone transitions are stored when there is a change on the base offset.
-		*/
+		*/a
 		private List<KeyValuePair<DateTime, TimeType>> transitions;
 
 #if !MOBILE || MOBILE_STATIC
@@ -150,7 +150,7 @@ namespace System
 #endif
 
 #if LIBC
-			string[] continents = new string [] {"Africa", "America", "Antarctica", "Arctic", "Asia", "Atlantic", "Brazil", "Canada", "Chile", "Europe", "Indian", "Mexico", "Mideast", "Pacific", "US"};
+			string[] continents = new string [] {"Africa", "America", "Antarctica", "Arctic", "Asia", "Atlantic", "Australia", "Brazil", "Canada", "Chile", "Europe", "Indian", "Mexico", "Mideast", "Pacific", "US"};
 			foreach (string continent in continents) {
 				try {
 					foreach (string zonepath in Directory.GetFiles (Path.Combine (TimeZoneDirectory, continent))) {
